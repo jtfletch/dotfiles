@@ -24,3 +24,18 @@ antidote load
 
 test -e "${ZDOTDIR}/.iterm2_shell_integration.zsh" && source "${ZDOTDIR}/.iterm2_shell_integration.zsh"
 
+alias ncfg='nvim ~/Dotfiles/nvim/.config/nvim/init.lua'
+alias zcfg='nvim ~/Dotfiles/zsh/.config/zsh/.zshrc'
+
+# git aliases
+alias gits='git status'
+alias gitc='git commit'
+alias gitp='git push'
+alias lz='lazygit'
+
+# open code folder in finder
+alias dev='open ~/Code'
+
+# Run executable at ~/Dotfiles/bin/ndev if it exists
+[[ -x ~/Dotfiles/bin/ndev ]] && alias ndev='~/Dotfiles/bin/ndev'
+
